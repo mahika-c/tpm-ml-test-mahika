@@ -1,4 +1,4 @@
-# Team Process Mapping Take-Home Task: [YOUR NAME HERE].
+# Team Process Mapping Take-Home Task: Mahika Calyanakoti.
 
 Goal: In this pre-test, you will first read brief selections from two social science papers (Step 1). You will then go through an end-to-end implementation of a feature and apply it to a dataset of team conversations (Step 2). Finally, you will write a reflection on how well you think this feature extractor performed on the data, as well as how well it performs in operationalizing social science constructs (Step 3).
 
@@ -9,7 +9,7 @@ Please write your reflection in this README document.
 ## 1. High-Level Questions
 1a. Which dataset did you choose?
 
-> [YOUR ANSWER]
+> I used the CSOP dataset, which is the smaller dataset.
 
 1b. What method(s) did you choose? In 1-2 sentences each, describe your sentiment analysis method(s).
 
