@@ -9,11 +9,18 @@ Please write your reflection in this README document.
 ## 1. High-Level Questions
 1a. Which dataset did you choose?
 
-> I used the CSOP dataset, which is the smaller dataset.
+> I used the CSOP dataset, which is the smaller dataset. As mentioned in the write up: "this is a (real) dataset of team conversations by Amazon Mechanical Turk workers. They are playing a game known as the ‘Constraint Satisfaction and Optimization Problem,’ or CSOP". There are about 5,000 observations in this dataset.
 
 1b. What method(s) did you choose? In 1-2 sentences each, describe your sentiment analysis method(s).
 
-> [YOUR ANSWER]
+> The sentiment analysis I used was Twitter-roBERTa-base for Sentiment Analysis. It was trained on 124 million Tweets from between 2018 and 2021.
+>
+> @inproceedings{barbieri2020tweeteval,
+  title={{TweetEval:Unified Benchmark and Comparative Evaluation for Tweet Classification}},
+  author={Barbieri, Francesco and Camacho-Collados, Jose and Espinosa-Anke, Luis and Neves, Leonardo},
+  booktitle={Proceedings of Findings of EMNLP},
+  year={2020}
+}
 
 1c. Does your method capture any of the ideas from Troth et al. and West et al.? If so, which ones?
 
