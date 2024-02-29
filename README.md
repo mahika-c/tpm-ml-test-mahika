@@ -25,11 +25,11 @@ Please write your reflection in this README document.
 
 1c. Does your method capture any of the ideas from Troth et al. and West et al.? If so, which ones?
 
-> [YOUR ANSWER]
+> Troth et al. and West et al. talk about positivity measures in teams. Specifically, in the diagram on page 701 of Troth et al., we can see the classification of individual versus team based emotional awareness and control. In the task that I completd, I focused more on the chat-level sentiment analysis, which would relate more to the individual metrics mentioned in Troth et al. Later on page 708, we see that inability to control one's emotions, such as when feeling frustrated, correlated to more negative sentiments. This is reflected by the Twitter-trained model I used; as you can see in the csv, in line 237, the chat message "what are you doing our score is lower now" correlates to a negativity score of 0.84 due to the frustrated tone. The model I used also relates to the measures of positivity in team communications mentioned in West et al.: Team optimism, team efficacy, and team resilience (page 256). The model I used looks for words that are associated with optimisim to provide higher positive probabilities, such as the message "very good" in line 184 being assigned a positive probability of 0.94.
 
 1d. Compared to how Troth et al. and West et al. measured positivity, what are some strengths and weaknesses of your approach?
 
-> [YOUR ANSWER]
+> Compared to Troth et al. and West et al.'s methodologies for measuring positivity in team communications, my approach analyzes sentiment at the chat level more (I analyzed the chat level csv primarily), providing a more granular understanding of individual interactions. Using ML models allows for automated processing of large datasets efficiently, reducing manual effort. However, my approach might lack contextual understanding and domain-specific knowledge, potentially leading to misinterpretations of sentiment nuances within CSOP conversations. The methods discussed in the papers, on the other hand, are more survey and human-based, so they are fine tuned to the exact context. While flexible and adaptable to different language styles, my model might struggle to capture multimodal cues in team interactions, like tone or emoticons. Despite these limitations, its scalability and automation make it a good tool for analyzing extensive text data, allowing for insights into overall sentiment dynamics within teams.
 
 ## 2. Method evaluation
 Next, we would like you to consider how you would evaluate your method. How do you know the classification or quantification of emotion is “right?” Try to think critically!
