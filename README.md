@@ -50,9 +50,9 @@ Next, we would like you to consider how you would evaluate your method. How do y
 
 > (3) Evaluation Metrics Calculation to Analyze the Model:
 
-Precision: Calculate the proportion/percentage of correctly predicted positive instances out of all instances predicted as positive. You should do this for neutral and negative as well.
-Recall: Compute the proportion of correctly predicted positive instances out of all actual positive instances. Again, you should do this for neutral and negative as well.
-F1-score: Find the harmonic mean of precision and recall, which thus provides a balanced evaluation metric.
+> Precision: Calculate the proportion/percentage of correctly predicted positive instances out of all instances predicted as positive. You should do this for neutral and negative as well.
+> Recall: Compute the proportion of correctly predicted positive instances out of all actual positive instances. Again, you should do this for neutral and negative as well.
+> F1-score: Find the harmonic mean of precision and recall, which thus provides a balanced evaluation metric.
 Confusion Matrix: You can also make a confusion matrix to visualize the models' performance across the 3 sentiment classes to see where the model performs well or struggles.
 
 > (4) Analyzing Errors: Look into misclassified instances to see patterns or frequent mistakes for the model to know what areas to target for improvement.
