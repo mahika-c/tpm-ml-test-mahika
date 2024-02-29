@@ -72,7 +72,7 @@ Confusion Matrix: You can also make a confusion matrix to visualize the models' 
 ## 3. Overall reflection
 3a. How much time did it take you to complete this task? (Please be honest; we are looking for feedback to make sure the task is scoped appropriately, as this is one of the first times we’re using this task.)
 
-> This took me about 5 hours (1 hour for reading, 2 hours for choosing a sentiment analysis model, implementing it, and obtaining the csv output), and 2 hours for Part 3).
+> This took me about 6 hours (1 hour for reading, 2.5 hours for choosing a sentiment analysis model, implementing it, and obtaining the csv output), and 2.5 hours for Part 3).
 
 3b. Finally, provide an overall reflection of your experience. How did you approach this task? What challenge(s) did you encounter? If you had more time, what are additional extensions, improvements, or tests that you would want to implement?
 
