@@ -44,7 +44,24 @@ Next, we would like you to consider how you would evaluate your method. How do y
 
 2c. Describe the steps you would take in evaluating this method. Be as specific as possible.
 
-> [YOUR ANSWER]
+> (1) Data Preparation: Make sure that the evaluation dataset is separate from the training & testing datasets (avoids data leakage). Each observation should be matched with a ground truth label for sentiment (positive, neutral, or negative).
+
+(2) Prediction Generation: Run the trained sentiment analysis model on the evaluation dataset. This will generate predicted sentiment labels for each observation.
+
+(3) Evaluation Metrics Calculation to Analyze the Model:
+
+Precision: Calculate the proportion/percentage of correctly predicted positive instances out of all instances predicted as positive. You should do this for neutral and negative as well.
+Recall: Compute the proportion of correctly predicted positive instances out of all actual positive instances. Again, you should do this for neutral and negative as well.
+F1-score: Find the harmonic mean of precision and recall, which thus provides a balanced evaluation metric.
+Confusion Matrix: You can also make a confusion matrix to visualize the models' performance across the 3 sentiment classes to see where the model performs well or struggles.
+
+(4) Analyzing Errors: Look into misclassified instances to see patterns or frequent mistakes for the model to know what areas to target for improvement.
+
+(5) Cross-validation: You could also use k-fold cross-validation to more robustly evaluate the results. This randomly splits the data and into k groups and iteratively uses different partitions as the training vs testing data, calculating the errors for each iteration.
+
+(6) Compare with Baselines/Other Models: Compare the performance of our sentiment analysis model with baseline models to get a better understanding of its effectiveness.
+
+(7) Documentation: Document the evaluation results and methodology followed. Also write down any observations made during the evaluation process. This can help with future improvements and analyses, and will document the problem areas of the model.
 
 2d. Given the nature of these datasets, what challenges do you anticipate that you may encounter during evaluation? How would you go about resolving them?
 
