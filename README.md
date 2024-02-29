@@ -46,26 +46,28 @@ Next, we would like you to consider how you would evaluate your method. How do y
 
 > (1) Data Preparation: Make sure that the evaluation dataset is separate from the training & testing datasets (avoids data leakage). Each observation should be matched with a ground truth label for sentiment (positive, neutral, or negative).
 
-(2) Prediction Generation: Run the trained sentiment analysis model on the evaluation dataset. This will generate predicted sentiment labels for each observation.
+> (2) Prediction Generation: Run the trained sentiment analysis model on the evaluation dataset. This will generate predicted sentiment labels for each observation.
 
-(3) Evaluation Metrics Calculation to Analyze the Model:
+> (3) Evaluation Metrics Calculation to Analyze the Model:
 
 Precision: Calculate the proportion/percentage of correctly predicted positive instances out of all instances predicted as positive. You should do this for neutral and negative as well.
 Recall: Compute the proportion of correctly predicted positive instances out of all actual positive instances. Again, you should do this for neutral and negative as well.
 F1-score: Find the harmonic mean of precision and recall, which thus provides a balanced evaluation metric.
 Confusion Matrix: You can also make a confusion matrix to visualize the models' performance across the 3 sentiment classes to see where the model performs well or struggles.
 
-(4) Analyzing Errors: Look into misclassified instances to see patterns or frequent mistakes for the model to know what areas to target for improvement.
+> (4) Analyzing Errors: Look into misclassified instances to see patterns or frequent mistakes for the model to know what areas to target for improvement.
 
-(5) Cross-validation: You could also use k-fold cross-validation to more robustly evaluate the results. This randomly splits the data and into k groups and iteratively uses different partitions as the training vs testing data, calculating the errors for each iteration.
+> (5) Cross-validation: You could also use k-fold cross-validation to more robustly evaluate the results. This randomly splits the data and into k groups and iteratively uses different partitions as the training vs testing data, calculating the errors for each iteration.
 
-(6) Compare with Baselines/Other Models: Compare the performance of our sentiment analysis model with baseline models to get a better understanding of its effectiveness.
+> (6) Compare with Baselines/Other Models: Compare the performance of our sentiment analysis model with baseline models to get a better understanding of its effectiveness.
 
-(7) Documentation: Document the evaluation results and methodology followed. Also write down any observations made during the evaluation process. This can help with future improvements and analyses, and will document the problem areas of the model.
+> (7) Documentation: Document the evaluation results and methodology followed. Also write down any observations made during the evaluation process. This can help with future improvements and analyses, and will document the problem areas of the model.
 
 2d. Given the nature of these datasets, what challenges do you anticipate that you may encounter during evaluation? How would you go about resolving them?
 
-> [YOUR ANSWER]
+> Given the nature of the CSOP dataset, various challenges can arise during evaluation. One challenge might be the use of nuanced and context-dependent language within the conversations, which could make sentiment classification subjective and lead to interpretation errors. Also, the dataset might have class imbalance, with certain sentiment classes being more represented than others. This can skew the evaluation metrics and affect the model's performance evaluation. Further, since the dataset has a conversational nature, this can introduce noise/ambiguity, so the sentiment analysis model might have trouble accurately categorizing the underlying sentiment.
+>
+> To resolve these challenges, the code would need careful preprocessing of the text to handle noise and context. There might need to be model training for emojis/emoticons and punctuation, since omitting punctuation altogether might get rid of the sentiment intended by the person. The code would also need to ensure balanced sampling strategies for evaluation, and might be able to use domain-specific features to improve the model's understanding of the CSOP conversations. Additionally, using qualitative analysis alongside quantitative evaluation can provide deeper insights into the model's performance, including any inherent biases or limitations in the dataset.
 
 ## 3. Overall reflection
 3a. How much time did it take you to complete this task? (Please be honest; we are looking for feedback to make sure the task is scoped appropriately, as this is one of the first times we’re using this task.)
