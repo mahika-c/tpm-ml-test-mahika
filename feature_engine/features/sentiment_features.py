@@ -9,6 +9,7 @@ config = AutoConfig.from_pretrained(MODEL)
 model = AutoModelForSequenceClassification.from_pretrained(MODEL)
 
 # TODO - DEFINE YOUR FEATURE EXTRACTOR HERE
+# SOURCE: https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment-latest?text=newLion+Great+point.++Maybe+they+can+educate+her+mom.
 def get_sentiment(text):
     encoded_input = tokenizer(text, return_tensors='pt')
     output = model(**encoded_input)
