@@ -1,10 +1,6 @@
-# Team Process Mapping Take-Home Task: Mahika Calyanakoti.
+# Team Process Mapping: Mahika Calyanakoti.
 
-Goal: In this pre-test, you will first read brief selections from two social science papers (Step 1). You will then go through an end-to-end implementation of a feature and apply it to a dataset of team conversations (Step 2). Finally, you will write a reflection on how well you think this feature extractor performed on the data, as well as how well it performs in operationalizing social science constructs (Step 3).
-
-The idea behind this task is to give you a flavor of the scope of our work — to show how we take inspiration from social science, then apply these ideas in a computational way.
-
-Please write your reflection in this README document.
+Goal: First read brief selections from two social science papers (Step 1).Then, an end-to-end implementation of a feature and apply it to a dataset of team conversations (Step 2). Finally, a reflection on how well this feature extractor performed on the data, as well as how well it performs in operationalizing social science constructs (Step 3).
 
 ## 1. High-Level Questions
 1a. Which dataset did you choose?
